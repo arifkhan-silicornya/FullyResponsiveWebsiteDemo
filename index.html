@@ -4,7 +4,7 @@
 
 	<meta charset="utf-8">
 
-	<title>BANGLA NODI</title>
+	<title>simple responsive</title>
 
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,7 +36,7 @@
       right: 0;
       left: 0;
       z-index: 1030;
-      background-color: #212529!important;
+      background-color: #fff!important;
       transition: 0.5s;
       margin-bottom: 20px;
   }
@@ -63,6 +63,10 @@
   #navDiv a:hover{
     color: #a8262a!important;
   }
+  .toggle-icon, .toggle-icon span, .navbar-toggler{
+    background:#0e0e0e!important;
+    color:#eee!important;
+  }
   </style>
 </head>
 <body>
@@ -85,42 +89,42 @@
      </div>
 </section>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-transparent sticky-top " id="navDiv">
-  <a href="" class="nav-link text-light nav_brand">
+<nav class="navbar navbar-expand-lg bg-white text-black sticky-top " id="navDiv">
+  <a href="" class="nav-link text-dark nav_brand">
     <h1 class="custom_font ">Brand Name </h1>
       <!-- <img src="images/bangla_Nodi_1.png" width="300" height="60" class="align-top" alt="brand_Image"> -->
   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+  <button class="navbar-toggler toggle-icon" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa fa-thin fa-sliders"></i>
   </button>
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+  <div class="collapse navbar-collapse text-dark" id="navbarTogglerDemo01">
     
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
       <li class="nav-item active">
-        <a class="nav-link font-weight-bold" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link font-weight-bold text-dark" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link font-weight-bold" href="#service">Products</a>
-      </li>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link font-weight-bold" href="#">About US</a>
+        <a class="nav-link font-weight-bold text-dark" href="#service">Products</a>
       </li>
       </li>
       <li class="nav-item">
-        <a class="nav-link font-weight-bold" href="#">Contact Us</a>
+        <a class="nav-link font-weight-bold text-dark" href="#">About US</a>
       </li>
       </li>
       <li class="nav-item">
-        <a class="nav-link font-weight-bold" href="#"> Location</a>
+        <a class="nav-link font-weight-bold text-dark" href="#">Contact Us</a>
       </li>
       </li>
       <li class="nav-item">
-        <a class="nav-link font-weight-bold" href="#">Our Company</a>
+        <a class="nav-link font-weight-bold text-dark" href="#"> Location</a>
       </li>
       </li>
       <li class="nav-item">
-        <a class="nav-link font-weight-bold" href="#">Products</a>
+        <a class="nav-link font-weight-bold text-dark" href="#">Our Company</a>
+      </li>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link font-weight-bold text-dark" href="#">Products</a>
       </li>
     </ul>
   </div>
@@ -536,7 +540,6 @@
       <div class="col-md-12 text-light mx-auto ">
         <div class="row d-flex justify-content-between">
           <div class=" col-md-6 d-flex">
-            <h5 class="text-danger nav_brand mr-3 "> Hotline  : 0191310445 </h5>
             <h5 class="text-danger nav_brand"> Email : arifkhanshanto123@gmail.com </h5>
           </div>
           
@@ -557,7 +560,7 @@
 
       <hr class="border border-light w-100 mb-0">
       <div class="col-md-12 py-5  text-light text-center d-flex justify-content-center align-items-center">
-        BanglaNodi@2021
+        ARIF KHAN@<script>document.write(new Date().getFullYear())</script>
       </div>
 
 		</div>
@@ -622,6 +625,8 @@
   $('.carousel').carousel({
       interval: 1700
   })
+
+  
 </script>
 
 </body>
